@@ -84,6 +84,7 @@ ul.navigation li a:hover {
 .contact-info {
   height: 30px;
   width: auto;
+  margin-bottom: 10px;
 }
 
 /* line 80, ../sass/style.scss */
