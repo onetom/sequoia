@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+
+  <!-- Set the viewport width to device width for mobile -->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Sequoia: A responsive business template for Barley</title>
+
+  <!-- Included CSS Files -->
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/offcanvas.css">
+  <link rel="stylesheet" href="stylesheets/general_foundicons.css">
+  <link rel="stylesheet" href="stylesheets/general_enclosed_foundicons.css">
+  <link rel="stylesheet" href="stylesheets/social_foundicons.css">
+
+  <script src="javascripts/foundation_3/modernizr.foundation.js"></script>
+
+    <!-- RSS -->
+    <link rel="alternate" type="application/rss+xml" title="Full Blog Entries Feed" href="/blog/feed" />
+
+</head>
+<body id="page" class="off-canvas">
+
+<!-- SMALL SCREEN NAVIGATION -->
+  <nav id="topMenu" role="navigation">
+      <ul id="nav" class="nav-bar">
+          <li><a href="index.html" class="main">Home<img class="nav-arrow" src="images/nav_arrow.svg" width="8"></a></li>
+          <li><a href="about.html" class="main">About Us<img class="nav-arrow" src="images/nav_arrow.svg" width="8"></a></li>
+          <li><a href="blog.html" class="main">Blog<img class="nav-arrow" src="images/nav_arrow.svg" width="8"></a></li>
+          <li><a href="contact.html" class="main">Contact<img class="nav-arrow" src="images/nav_arrow.svg" width="8"></a></li>
+      </ul>
+  </nav>
+
+<!-- Header -->
+  <div class="first">
+
+    <div class="hide-for-small" style="height:12px;"> </div>
+
+    <header class="row">
+
+      <!--
+      <div class="twelve columns">
+        <div class="top-border"></div>
+      </div>
+      -->
+
+        <div class="row">
+          <div class="one column show-for-small">
+            <ul class="mobile-menu">
+              <li class="left"><a class='mobile-nav-button' id="menuButton" href="#menu"><span><i class="foundicon-page"></i></span>Menu</a></li>
+
+          <li class="right" class="first"><a class='mobile-contact-button'><span><i class="foundicon-location"></i></span>Find Us</a></li>
+          <li class="right"><a class='mobile-contact-button'><span><i class="foundicon-phone"></i></span>Call Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+    <div class="three columns logo-box">
+          <h1><img src="images/logo.svg" class="logo" /></h1>
+      </div>
+      <div class="nine columns">
+        <div class="contact-info hide-for-small">
+          <ul>
+            <li><i class="foundicon-phone"></i> <span data-barley="business_company_phonenumber" data-barley-editor="mini">1-800-555-1234</span></li>
+            <li><i class="foundicon-location"></i> <span data-barley="business_company_address" data-barley-editor="mini">123 Main Street, Springfield, IL 12345</span></li>
+          </ul>
+        </div>
+        <nav>
+          <ul id="mainNav" class="navigation right hide-for-small">
+          <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+      <!--    <p class="show-for-small">
+              <a class='menu-button button' id="menuButton" href="#menu">Menu</a>
+          </p> -->
+      </div>
+      <div class="twelve columns">
+        <div class="bottom-border"></div>
+      </div>
+    </header>
+  </div>
+  <!-- End Header -->
+
+  <div class="row">
+	 <div class="twelve columns">
+	 	<div class="page-title">
+	 		<h2 data-barley="business_blog_title" data-barley-editor="mini">Our Blog</h2>
+	 	</div>
+	 </div>
+  </div>
+
+  <!-- Main Page Content and Sidebar -->
+
+  <div class="row">
+    <!-- POSTS -->
+
+    <!-- Main Blog Content -->
+    <div class="nine columns blogposts" role="content">
+
+    <!-- repeat:blogpost:10 -->
+    <article>
+      <h3><a href="%URL%">%TITLE%</a></h3>
+      <div class="meta">Written by <span>%AUTHOR%</span> on <a href="%URL%" class="published_on" id="blogpost_%ID%_published_on" data-barley-publish-post="%ID%">%PUBLISHED_ON%</a></div>
+
+      <div data-barley="blogpost_%ID%_body">%BODY%</div>
+
+      <!-- <a class="button more-link" href="%URL%">Read More...</a> -->
+    </article>
+    <!-- endrepeat -->
+
+    <!-- previous -->
+    <div class="right">
+        <a href="#">Previous</a>
+    </div>
+    <!-- endprevious -->
+
+    <!-- next -->
+    <div class="left">
+        <a href="#">Next</a>
+    </div>
+    <!-- endnext -->
+
+    </div>
+    <!-- End Main Content -->
+
+
+    <!-- Sidebar -->
+    <aside class="three columns">
+
+	  <div class="widget">
+          <h5>Subscribe</h5>
+          <ul class="side-nav">
+            <li><a href="/blog/feed">RSS</a></li>
+            <li><a href="http://twitter.com/getbarley">Twitter</a></li>
+          </ul>
+      </div>
+
+      <div class="panel">
+        <h5 data-barley="business_blog_sidebartitle" data-barley-editor="mini">Info Box</h5>
+        <div data-barley="business_blog_sidebarcontent" data-barley-editor="advanced">
+        	<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+    	</div>
+      </div>
+
+    </aside>
+    <!-- End Sidebar -->
+
+  </div>
+  <!-- End Main Content and Sidebar -->
+
+
+ <!-- Call to Action Panel -->
+  <div class="row">
+    <div class="twelve columns">
+
+      <div class="panel">
+        <div class="row">
+          <div class="nine columns">
+            <h4 data-barley="panel_heading" data-barley-editor="mini">Panel Heading</h4>
+            <p data-barley="panel_content" data-barley-editor="plus">Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit.</p>
+          </div>
+          <div class="three columns">
+            <div class="button-box">
+              <a href="contact.html" class="radius button right">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+<!-- Footer -->
+
+  <footer class="row">
+    <div class="twelve columns">
+      <div class="bottom-border"></div>
+    </div>
+    <div class="twelve columns">
+      <div class="row">
+        <div class="seven columns hide-for-small">
+          <ul class="link-list left">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="five columns">
+          <p class="copyright">&copy; Copyright Spacely Sprockets, Inc. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Included JS Files (Uncompressed) -->
+  <script src="javascripts/foundation_3/jquery.cookie.js"></script>
+  <script src="javascripts/foundation_3/jquery.event.move.js"></script>
+  <script src="javascripts/foundation_3/jquery.event.swipe.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.accordion.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.alerts.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.buttons.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.clearing.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.forms.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.joyride.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.magellan.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.mediaQueryToggle.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.navigation.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.orbit.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.reveal.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.tabs.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.tooltips.js"></script>
+  <script src="javascripts/foundation_3/jquery.placeholder.js"></script>
+  <script src="javascripts/foundation_3/jquery.offcanvas.js"></script>
+  <script src="javascripts/foundation/app.js"></script>
+
+</body>
+</html>
