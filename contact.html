@@ -5,93 +5,83 @@
 
 <head>
   <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Set the viewport width to device width for mobile -->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sequoia: A responsive business template for Barley</title>
 
-  <title>Barley: Business Template Demo</title>
-
-  <!-- Included CSS Files -->
   <link rel="stylesheet" href="stylesheets/app.css">
   <link rel="stylesheet" href="stylesheets/style.css">
   <link rel="stylesheet" href="stylesheets/offcanvas.css">
-  <link rel="stylesheet" href="stylesheets/general_foundicons.css">
-  <link rel="stylesheet" href="stylesheets/general_enclosed_foundicons.css">
-  <link rel="stylesheet" href="stylesheets/social_foundicons.css">
+  <link rel="stylesheet" href="stylesheets/barlicons.css">
 
   <script src="javascripts/foundation_3/modernizr.foundation.js"></script>
 
-    <!-- RSS -->
-    <link rel="alternate" type="application/rss+xml" title="Full Blog Entries Feed" href="/blog/feed" />
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="Full Blog Entries Feed" href="/blog/feed" />
 
 </head>
 <body id="page" class="off-canvas">
 
-<!-- SMALL SCREEN NAVIGATION -->
+  <!-- Mobile Nav -->
   <nav id="topMenu" role="navigation">
       <ul id="nav" class="nav-bar">
-          <li><a href="/" class="main">Home<img class="nav-arrow" src="images/nav_arrow.svg" width="8"></a></li>
-          <li><a href="/about" class="main">About Us<img class="nav-arrow" src="images/nav_arrow.svg" width="8"></a></li>
-          <li><a href="/services" class="main">Services<img class="nav-arrow" src="images/nav_arrow.svg" width="8"></a></li>
-          <li><a href="/blog" class="main">Blog<img class="nav-arrow" src="images/nav_arrow.svg" width="8"></a></li>
-          <li><a href="/contact" class="main">Contact<img class="nav-arrow" src="images/nav_arrow.svg" width="8"></a></li>
+          <li><a href="index.html" class="main">Home<img class="nav-arrow" src="images/nav_arrow.svg" width="8"></a></li>
+          <li><a href="about.html" class="main">About Us<img class="nav-arrow" src="images/nav_arrow.svg" width="8"></a></li>
+          <li><a href="blog.html" class="main">Blog<img class="nav-arrow" src="images/nav_arrow.svg" width="8"></a></li>
+          <li><a href="contact.html" class="main">Contact<img class="nav-arrow" src="images/nav_arrow.svg" width="8"></a></li>
       </ul>
   </nav>
 
-<!-- Header -->
+  <!-- Header -->
   <div class="first">
-
-    <div class="hide-for-small" style="height:12px;"> </div>
-
+    <div class="hide-for-small" style="height:12px;"></div>
     <header class="row">
 
-      <!--
-      <div class="twelve columns">
-        <div class="top-border"></div>
-      </div>
-      -->
-
-        <div class="row">
-          <div class="one column show-for-small">
-            <ul class="mobile-menu">
-              <li class="left"><a class='mobile-nav-button' id="menuButton" href="#menu"><span><i class="foundicon-page"></i></span>Menu</a></li>
-
-          <li class="right" class="first"><a class='mobile-contact-button'><span><i class="foundicon-location"></i></span>Find Us</a></li>
-          <li class="right"><a class='mobile-contact-button'><span><i class="foundicon-phone"></i></span>Call Us</a></li>
-            </ul>
-          </div>
-        </div>
-
-    <div class="three columns logo-box">
-          <h1><img src="images/logo.svg" class="logo" /></h1>
-      </div>
-      <div class="nine columns">
-        <div class="contact-info hide-for-small">
-          <ul>
-            <li><i class="foundicon-phone"></i> <span data-barley="business_company_phonenumber" data-barley-editor="mini">1-800-555-1234</span></li>
-            <li><i class="foundicon-location"></i> <span data-barley="business_company_address" data-barley-editor="mini">123 Main Street, Springfield, IL 12345</span></li>
+      <!-- Mobile Menu & Contact Buttons -->
+      <div class="row">
+        <div class="one column show-for-small">
+          <ul class="mobile-menu">
+            <li class="left"><a id="menuButton" href="#menu"><span><i class="barley-icon-reorder"></i></span></a></li>
+            <li class="right"><a href="#"><i class="barley-icon-pushpin"></i></a></li>
+            <li class="right"><a href="#"><span>1-800-555-1234</span><i class="barley-icon-phone"></i></a></li>
           </ul>
         </div>
+      </div>
+
+      <!-- Logo -->
+      <div class="three columns logo-box">
+          <h1><a href="/"><img src="images/logo.svg" class="logo" /></a></h1>
+      </div>
+
+      <!-- Navigation -->
+      <div class="nine columns">
+
+        <!-- Contact Info -->
+        <div class="contact-info hide-for-small">
+          <ul>
+            <li><i class="barley-icon-phone"></i> <span data-barley="business_company_phonenumber" data-barley-editor="mini">1-800-555-1234</span></li>
+            <li><i class="barley-icon-pushpin"></i> <span data-barley="business_company_address" data-barley-editor="mini">123 Main Street, Springfield, IL 12345</span></li>
+          </ul>
+        </div>
+
+        <!-- Page Links -->
         <nav>
           <ul id="mainNav" class="navigation right hide-for-small">
-          <li><a href="index.html">Home</a></li>
+              <li><a href="index.html">Home</a></li>
               <li><a href="about.html">About Us</a></li>
               <li><a href="blog.html">Blog</a></li>
               <li><a href="contact.html">Contact Us</a></li>
             </ul>
         </nav>
 
-      <!--    <p class="show-for-small">
-              <a class='menu-button button' id="menuButton" href="#menu">Menu</a>
-          </p> -->
       </div>
       <div class="twelve columns">
         <div class="bottom-border"></div>
       </div>
     </header>
   </div>
-  <!-- End Header -->
 
+  <!-- Page Title -->
   <div class="row">
 	 <div class="twelve columns">
 	 	<div class="page-title">
@@ -99,92 +89,75 @@
 	 	</div>
 	 </div>	
   </div>
-  
-  <!-- Main Page Content and Sidebar -->
  
   <div class="row">
  
     <!-- Main Content -->
-    
     <div class="eight columns" role="content">
- 		<div data-barley="business_contact_content" data-barley-editor="simple">
-        	<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
- 		</div>
-        <div class="divider twelve columns"> </div>
+   		<div data-barley="business_contact_content" data-barley-editor="simple">
+          	<p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit. Aute in reprehenderit, dolore aliqua non est magna in labore pig pork biltong. Eiusmod swine spare ribs reprehenderit culpa.</p>
+   		</div>
+      <div class="divider twelve columns"> </div>
         
-         <div class="row collapse">
-            <div class="three columns"><label class="inline">Your Name:</label></div>
-            <div class="nine columns"><input type="text" id="yourName" placeholder="Jane Smith" /></div>
-          </div>
-          <div class="row collapse">
-            <div class="three columns"><label class="inline">Your Email:</label></div>
-            <div class="nine columns"><input type="text" id="yourEmail" placeholder="jane@smithco.com" /></div>
-          </div>
-          <div class="row collapse">
-            <div class="three columns"><label class="inline">Your Phone:</label></div>
-            <div class="nine columns"><input type="text" id="yourEmail" placeholder="555-555-1234" /></div>
-          </div>
+      <div class="row collapse">
+        <div class="three columns"><label class="inline">Your Name:</label></div>
+        <div class="nine columns"><input type="text" id="yourName" placeholder="Jane Smith" /></div>
+      </div>
+      <div class="row collapse">
+        <div class="three columns"><label class="inline">Your Email:</label></div>
+        <div class="nine columns"><input type="text" id="yourEmail" placeholder="jane@smithco.com" /></div>
+      </div>
+      <div class="row collapse">
+        <div class="three columns"><label class="inline">Your Phone:</label></div>
+        <div class="nine columns"><input type="text" id="yourEmail" placeholder="555-555-1234" /></div>
+      </div>
           
-        <div class="divider twelve columns"> </div>
+      <div class="divider twelve columns"> </div>
            
-          <div class="row collapse">
-            <div class="three columns"><label class="inline">Subject:</label></div>
-            <div class="nine columns"><input type="text" id="yourEmail" placeholder="ex. Project Inquiry, Support Request, etc." /></div>
-          </div>
-          <div class="row collapse">
-          	<div class="three columns"><label class="inline">Message:</label></div>
-          	<div class="nine columns"><textarea rows="6"></textarea></div>
-          </div>	
-          <div class="row collapse">
-          	<div class="three columns"></div>
-          	<div class="nine columns"><button type="submit" class="radius button">Submit</button></div>
-          </div>	
+      <div class="row collapse">
+        <div class="three columns"><label class="inline">Subject:</label></div>
+        <div class="nine columns"><input type="text" id="yourEmail" placeholder="ex. Project Inquiry, Support Request, etc." /></div>
+      </div>
+      <div class="row collapse">
+      	<div class="three columns"><label class="inline">Message:</label></div>
+      	<div class="nine columns"><textarea rows="6"></textarea></div>
+      </div>	
+      <div class="row collapse">
+      	<div class="three columns"></div>
+      	<div class="nine columns"><button type="submit" class="button">Submit</button></div>
+      </div>	
 
-    
        <div class="spacer" style="clear:both;"> </div>
-     
-       
+  
     </div>
  
-    <!-- End Main Content -->
- 
- 
     <!-- Sidebar -->
- 
     <aside class="four columns">
 	  
       <div class="panel info">
         <h5 data-barley="business_contact_sidebartitle" data-barley-editor="mini">Our Location </h5>
       	<img src="http://placehold.it/400x260&text=map">
       	<ul class="side-contact-info">
-      		<li><i class="foundicon-location"></i>123 Main Street</li>
+      		<li><i class="barley-icon-pushpin"></i>123 Main Street</li>
       		<li>Springfield, IL 12345</li> 
       		<li class="divider"></li>
-      		<li><i class="foundicon-phone"></i>1-800-555-1234 (toll-free)</li>
+      		<li><i class="barley-icon-phone"></i>1-800-555-1234 (toll-free)</li>
       		<li>555-555-1234 (cellular)</li>
       		<li class="divider"></li>
-      		<li><i class="foundicon-globe"></i><a href="#">http://spacelysprokets.com</a></li>
+      		<li><i class="barley-icon-link"></i><a href="#">http://website.com</a></li>
       		<li class="divider"></li>
-      		<li><i class="foundicon-smiley"></i><a href="#">Facebook</a></li>
+      		<li><i class="barley-icon-plus-sign"></i><a href="#">Facebook</a></li>
       		<li><a href="#">Twitter</a></li>
       		<li><a href="#">Skype</a></li>
       		<li><a href="#">LinkedIn</a></li> 
       	</ul>	     		      		      		
-      	   
-      
       </div>
- 
     </aside>
-    
-    
- 
-    <!-- End Sidebar -->
+
   </div>
- 
-  <!-- End Main Content and Sidebar -->
 
-<!-- Footer -->
 
+  <!-- Footer -->
   <footer class="row">
     <div class="twelve columns">
       <div class="bottom-border"></div>
@@ -200,32 +173,24 @@
           </ul>
         </div>
         <div class="five columns">
-          <p class="copyright">&copy; Copyright Spacely Sprockets, Inc. All rights reserved.</p>
+          <p class="copyright">&copy; Copyright Sequoia. All rights reserved.</p>
         </div>
       </div>
     </div>
   </footer>
 
-  <!-- Included JS Files (Uncompressed) -->
+  <!-- Foundation JS -->
   <script src="javascripts/foundation_3/jquery.cookie.js"></script>
   <script src="javascripts/foundation_3/jquery.event.move.js"></script>
   <script src="javascripts/foundation_3/jquery.event.swipe.js"></script>
-  <script src="javascripts/foundation_3/jquery.foundation.accordion.js"></script>
-  <script src="javascripts/foundation_3/jquery.foundation.alerts.js"></script>
   <script src="javascripts/foundation_3/jquery.foundation.buttons.js"></script>
-  <script src="javascripts/foundation_3/jquery.foundation.clearing.js"></script>
   <script src="javascripts/foundation_3/jquery.foundation.forms.js"></script>
-  <script src="javascripts/foundation_3/jquery.foundation.joyride.js"></script>
-  <script src="javascripts/foundation_3/jquery.foundation.magellan.js"></script>
   <script src="javascripts/foundation_3/jquery.foundation.mediaQueryToggle.js"></script>
   <script src="javascripts/foundation_3/jquery.foundation.navigation.js"></script>
   <script src="javascripts/foundation_3/jquery.foundation.orbit.js"></script>
-  <script src="javascripts/foundation_3/jquery.foundation.reveal.js"></script>
-  <script src="javascripts/foundation_3/jquery.foundation.tabs.js"></script>
-  <script src="javascripts/foundation_3/jquery.foundation.tooltips.js"></script>
   <script src="javascripts/foundation_3/jquery.placeholder.js"></script>
   <script src="javascripts/foundation_3/jquery.offcanvas.js"></script>
-  <script src="javascripts/foundation/app.js"></script>
+  <script src="javascripts/app.js"></script>
 
 </body>
 </html>
