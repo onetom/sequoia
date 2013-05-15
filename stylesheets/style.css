@@ -623,7 +623,9 @@ div[role="content"] ul {
 div[role="content"] ul li {
   margin-left: 8px;
 }
-
+div[role="content"] ul.gallery li {
+  margin-left: 0;
+}
 
 /* start media query */
 
