@@ -10,6 +10,9 @@ body {
 h1 {
   margin: 6px 0 0;
 }
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Gentium Basic', serif;
+}
 p {
   font-size: 14px;
   line-height: 23px;
@@ -613,6 +616,12 @@ button[type="submit"] {
 }
 .block-grid.four-up > li {
   padding: 0 10px 14px;
+}
+div[role="content"] ul {
+  list-style: inside;
+}
+div[role="content"] ul li {
+  margin-left: 8px;
 }
 
 
