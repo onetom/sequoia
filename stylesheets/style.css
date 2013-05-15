@@ -614,6 +614,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
 button[type="submit"] {
   margin-top: 14px;
 }
+
 .block-grid.gallery {
   margin: 0 -8px;
 }
@@ -635,6 +636,17 @@ button[type="submit"] {
 .block-grid.four-up > li {
   padding: 0 10px 14px;
 }
+
+#barley-form-message {
+  background: rgba(0,0,0,0.03);
+  border-radius: 3px;
+  padding: 13px 14px;
+  margin: 36px 0;
+  text-align: center;
+  box-shadow: 0 1px 0 0 rgba(2,0,0,0.1), 0 -28px 28px -18px rgba(0,0,0,0.01) inset;
+  font-size: 13px;
+}
+
 div[role="content"] ul {
   list-style: inside;
 }
