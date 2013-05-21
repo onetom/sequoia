@@ -41,10 +41,10 @@
     });
   }
 
-  $('#nav li a').on(events, function (e) {
+  /*$('#nav li a').on(events, function (e) {
     e.preventDefault();
     var href = $(this).attr('href'),
       $target = $(href);
     $('html, body').animate({scrollTop : $target.offset().top}, 300);
-  });
+  });  Removed because it was causing issues and is basically irrelevant 5.16.13*/
 }(this, document, jQuery));
