@@ -1,8 +1,6 @@
-sequoia
+Sequoia - A Responsive Business Template for Barley
 =======
 
-Sequoia - A responsive business theme for Barley
+More information at http://getbarley.com/
 
-http://getbarley.com/
-
-Theme docs (temporary) http://plainmade.com/blog/5/draft-barley-template-documentation
+By Plain: http://plainmade.com
