@@ -1,8 +1,9 @@
-sequoia
+Sequoia - A Responsive Business Template for Barley
 =======
 
-Sequoia - A responsive business theme for Barley
+[Barley](http://getbarley.com/) and Red Oak are being made by [Plain](http://plainmade.com/).
 
-http://getbarley.com/
+LICENSE
+==
 
-Theme docs (temporary) http://plainmade.com/blog/5/draft-barley-template-documentation
+You can feel free to use this template in anyway you want. Give attribution, don't give attribution, it is up to you.

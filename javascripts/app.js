@@ -35,4 +35,7 @@
     });
   }
 
+  $('#mobile_map_link').attr('href','http://maps.google.com/?q='+$('[data-barley="business_company_address"]').html());
+  $('#mobile_phonenumber_link').attr('href','/tel:'+$('[data-barley="business_company_phonenumber"]').html());
+
 })(jQuery, this);
