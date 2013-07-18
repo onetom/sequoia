@@ -558,6 +558,15 @@ aside .panel p {
 	margin: auto;
 	display: block;
 }
+.align-left {
+	text-align: left;
+}
+.align-right {
+	text-align: right;
+}
+.align-center {
+	text-align: center;
+}
 aside .info {
   margin-top: 4px;
   padding: 18px 22px;
