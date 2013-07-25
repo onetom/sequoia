@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+
+<!--[if IE 8]> <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title></title>
+  <base href="/">
+
+  <link rel="stylesheet" href="stylesheets/app.css">
+  <link rel="stylesheet" href="stylesheets/style.css">
+  <link rel="stylesheet" href="stylesheets/offcanvas.css">
+  <link rel="stylesheet" href="<!-- @path barlicons.css">
+
+  <script src="javascripts/foundation_3/modernizr.foundation.js"></script>
+
+  <!-- RSS -->
+  <link rel="alternate" type="application/rss+xml" title="Full Blog Entries Feed" href="/feed" />
+
+</head>
+<body id="page" class="off-canvas">
+
+  <!-- Mobile Nav -->
+  <nav id="topMenu" role="navigation">
+      <ul id="nav" class="nav-bar">
+        <!-- barleynav -->
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li class='current'><a class='current' href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        <!-- endbarleynav -->
+      </ul>
+  </nav>
+
+  <!-- Header -->
+  <div class="first">
+    <div class="hide-for-small" style="height:12px;"></div>
+    <header class="row">
+
+      <!-- Mobile Menu & Contact Buttons -->
+      <div class="row">
+        <div class="one column show-for-small">
+          <ul class="mobile-menu">
+            <li class="left"><a id="menuButton" href="#menu"><span><i class="barley-icon-reorder"></i></span></a></li>
+            <li class="right"><a id="mobile_map_link" href="#"><i class="barley-icon-pushpin"></i></a></li>
+            <li class="right"><a id="mobile_phonenumber_link" href="#"><i class="barley-icon-phone"></i></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- Logo -->
+      <div class="three columns logo-box">
+          <h1 data-barley-editor="image-logo" data-barley="site_logo"><a href="/"><img src="images/logo.svg" class="logo" /></a></h1>
+      </div>
+
+      <div class="nine columns">
+
+        <!-- Contact Info -->
+        <div class="contact-info hide-for-small">
+          <ul>
+            <li><i class="barley-icon-phone"></i> <span data-barley="business_company_phonenumber" data-barley-editor="mini">1-800-555-1234</span></li>
+            <li><i class="barley-icon-pushpin"></i> <span data-barley="business_company_address" data-barley-editor="mini">123 Main Street, Springfield, IL 12345</span></li>
+          </ul>
+        </div>
+
+        <!-- Page Links -->
+        <nav>
+          <ul id="mainNav" class="navigation right hide-for-small" data-barley-navigation="left">
+              <!-- barleynav -->
+              <li><a href="index.html">Home</a></li>
+              <li><a href="about.html">About Us</a></li>
+              <li class='current'><a class='current' href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <!-- endbarleynav -->
+            </ul>
+        </nav>
+
+      </div>
+      <div class="twelve columns">
+        <div class="bottom-border"></div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Page Title -->
+  <div class="row">
+	 <div class="twelve columns">
+	 	<div class="page-title">
+	 		<h2 data-barley="business_blog_title" data-barley-editor="mini">Our Blog</h2>
+	 	</div>
+	 </div>
+  </div>
+
+  <div class="row">
+    <!-- POSTS -->
+    <div class="nine columns blogposts" role="content">
+
+    <!-- repeat:blogpost:10 -->
+    <article>
+      <h3><a href="%URL%">%TITLE%</a></h3>
+      <div class="meta">Written by <span>%AUTHOR%</span> on <a href="%URL%" class="published_on" id="blogpost_%ID%_published_on" data-barley-publish-post="%ID%">%PUBLISHED_ON%</a></div>
+
+      <div data-barley="blogpost_%ID%_body">%BODY%</div>
+
+      <!-- <a class="button more-link" href="%URL%">Read More...</a> -->
+    </article>
+    <!-- endrepeat -->
+
+    <!-- previous -->
+    <div class="right">
+        <a href="#">Previous</a>
+    </div>
+    <!-- endprevious -->
+
+    <!-- next -->
+    <div class="left">
+        <a href="#">Next</a>
+    </div>
+    <!-- endnext -->
+
+    </div>
+    <!-- End Main Content -->
+
+
+    <!-- Sidebar -->
+    <aside class="three columns">
+
+	    <div class="widget">
+         <div data-barley="business_blogsidebar_subscribe" data-barley-editor="advanced">
+          <h5>Subscribe</h5>
+            <ul class="side-nav">
+              <li><a href="/blog/feed">RSS</a></li>
+              <li><a href="http://twitter.com/getbarley">Twitter</a></li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="panel">
+        <h5 data-barley="business_blog_sidebartitle" data-barley-editor="mini">Info Box</h5>
+        <div data-barley="business_blog_sidebarcontent" data-barley-editor="advanced">
+        	<p>Pork drumstick turkey fugiat. Tri-tip elit turducken pork chop in. Swine short ribs meatball irure bacon nulla pork belly cupidatat meatloaf cow.</p>
+    	</div>
+      </div>
+
+    </aside>
+
+  </div>
+
+
+<!-- Call to Action Panel -->
+  <div class="row">
+    <div class="twelve columns">
+      <div class="panel">
+        <div class="row">
+          <div class="nine columns">
+            <h4 data-barley="panel_heading" data-barley-editor="mini">Panel Heading</h4>
+            <div data-barley="panel_content" data-barley-editor="plus"><p>Bacon ipsum dolor sit amet nulla ham qui sint exercitation eiusmod commodo, chuck duis velit.</p></div>
+          </div>
+          <div class="three columns">
+            <div class="button-box">
+              <a href="contact.html" class="button right">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="row">
+    <div class="twelve columns">
+      <div class="bottom-border"></div>
+    </div>
+    <div class="twelve columns">
+      <div class="row">
+        <div class="seven columns hide-for-small">
+          <ul class="link-list left">
+            <!-- barleynav -->
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li class='current'><a class='current' href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <!-- endbarleynav -->
+          </ul>
+        </div>
+        <div class="five columns">
+          <p class="copyright" data-barley="footer_copyright" data-barley-editor="mini">&copy; Copyright Sequoia. All rights reserved.</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Foundation JS -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script src="javascripts/foundation_3/jquery.cookie.js"></script>
+  <script src="javascripts/foundation_3/jquery.event.move.js"></script>
+  <script src="javascripts/foundation_3/jquery.event.swipe.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.buttons.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.forms.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.mediaQueryToggle.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.navigation.js"></script>
+  <script src="javascripts/foundation_3/jquery.foundation.orbit.js"></script>
+  <script src="javascripts/foundation_3/jquery.placeholder.js"></script>
+  <script src="javascripts/foundation_3/jquery.offcanvas.js"></script>
+  <script src="javascripts/app.js"></script>
+
+</body>
+</html>
