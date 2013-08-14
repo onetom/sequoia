@@ -1,0 +1,11 @@
+{
+    "name": "Sequoia",
+    "creator": "Kyle Ruane",
+    "creator_url": "http://plainmade.com",
+    "repeatables": {
+        "business_services_section": {
+            "title": "This is the default title",
+            "caption": "This is the default caption"
+        }
+    }
+}
